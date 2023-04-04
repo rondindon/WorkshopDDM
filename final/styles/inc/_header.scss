@@ -1,0 +1,44 @@
+header{
+    background-color: black;
+    .navbar{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 2rem 0;
+        gap: 1rem;
+    
+        .logo{
+            display: flex;
+            align-items: center;
+            height: 3rem;
+            gap: 1rem;
+            .logopng{
+                height: 100%;
+            }
+            .title{
+                color: whitesmoke;
+                font-size: 1.3rem;
+                line-height: 120%;
+                letter-spacing: -1px;
+            }
+        }
+    
+        .nav_line{
+            font-weight: 900;
+            margin-bottom: .5rem;
+        }
+    
+        .nav_links{
+            display: flex;
+            gap: 1rem;
+        }
+    
+        .nav_item{
+            a{
+                color: whitesmoke;
+                font-size: .9em;
+            }
+        }
+    }
+}
