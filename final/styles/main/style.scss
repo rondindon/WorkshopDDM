@@ -35,7 +35,7 @@
 
     .gallery{
         background-color: black;
-        padding: 0 0;
+        padding: 3rem 0;
 
         .photos-container{
             margin: auto;
@@ -71,7 +71,7 @@
 
         .about-container{
             margin: 5rem auto;
-            width: 70%;
+            width: 50%;
 
             display: flex;
             flex-direction: column;
@@ -83,6 +83,79 @@
 
             img{
                 width: 100%;
+                margin-top: 2rem;
+
+                filter: saturate(.5);
+                filter: brightness(120%);
+                filter: contrast(150%);
+            }
+
+            .title{
+                font-size: 2.4em;
+                font-weight: 600;
+            }
+
+            .subtitle{
+                font-size: 1.2em;
+                font-weight: 200;
+            }
+
+            .content{
+                font-weight: 200;
+                font-size: 1.05em;
+            }
+
+            .btn{
+                margin-top: .5rem;
+                color: whitesmoke;
+                background-color: black;
+                padding: .78em 1.1rem;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: .3s;
+                font-size: 0.87em;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    .opening-hours{
+        height: 80vh;
+        background-image: url("../../img/basic/gar.jpg");
+        background-size: cover;
+        margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hours{
+            background-color: black;
+            color: whitesmoke;
+            width: 28%;
+            height: 35%;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            h2{
+                font-size: 1.7em;
+            }
+            
+            p{
+                font-weight: 300;
+            }
+
+            .timetable{
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
             }
         }
     }

@@ -19,7 +19,7 @@
 
     </div>
 
-    <div class="divider shapedividers_com-4950">
+    <div class="divider shapedividers_com-9968">
     </div>
 
     <section class="gallery">
@@ -39,7 +39,7 @@
 
     </section>
 
-    <div class="divider shapedividers_com-4897">
+    <div class="divider shapedividers_com-3062">
     </div>
 
     <section class="about">
@@ -50,12 +50,26 @@
 
             <h3 class="subtitle">Creative Old School Designs</h3>
 
-            <p>Welcome to the home of endless creativity. We believe that remarkable designs start with a simple idea and evolve into inspiring outcomes. Rondon workshop’s team of design enthusiasts are wholly committed to your goals and vision. Through our wide range of services we ensure that expectations are not just met, but exceeded. Collaboration and communication are key to long-term success.</p>
+            <p class="content">Welcome to the home of endless creativity. We believe that remarkable designs start with a simple idea and evolve into inspiring outcomes. Rondon workshop’s team of design enthusiasts are wholly committed to your goals and vision. Through our wide range of services we ensure that expectations are not just met, but exceeded. <br>Collaboration and communication are key to long-term success.</p>
 
             <button class="btn">Get in Touch</button>
 
             <img src="img/low/jump.jpg" alt="sexy car">
 
+        </div>
+
+    </section>
+
+    <section class="opening-hours">
+
+        <div class="hours">
+            <h2>OPENING HOURS</h2>
+            <p>Come Visit</p>
+            <div class="timetable">
+                <p>Mon - Fri: 9am - 7pm</p>
+                <p>Sat: 10am - 2pm</p>
+                <p>Sun: Closed</p>
+            </div>      
         </div>
 
     </section>
