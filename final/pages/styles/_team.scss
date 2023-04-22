@@ -1,0 +1,118 @@
+.team{
+    background-image:url("../../img/team/team.png");
+    background-size: cover;
+    padding: 5rem 0;
+    @include flex-center;
+    height: 100%;
+
+    .members-container{
+        max-height: 90%;
+        width: 70%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1rem;
+
+        .title{
+            font-size: 3.5em;
+            @include flex-center;
+            margin-bottom: 5rem;
+        }
+
+        .members{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+            max-height: 100%;
+            width: 100%;
+            text-align: start;
+
+            .member-card{
+                display: flex;
+                flex-direction: column;
+
+                img{
+                    width: 100%;
+                    height: 60%;
+                }
+
+                h3{
+                    margin-top: 2rem;
+                }
+
+                h4{
+                    font-weight: 200;
+                    margin-top: .3rem;
+                }
+
+                p{
+                    margin-top: 2rem;
+                    font-weight: 200;
+                }
+
+                a{
+                    margin-top: 2rem;
+                    color: black;
+                    transition: .3s;
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.desc-container{
+    background-color: white;
+    @include flex-center;
+    padding: 4rem 0;
+
+
+    .member-desc{
+        background-color: white;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 12rem;
+
+        a{
+            color: black;
+            &:hover{
+                opacity: .7;
+            }
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+
+            .desc{
+                h1{
+                    font-size: 2.2em;
+                }
+
+                h3{
+                    font-weight: 200;
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
+                }
+
+                p{
+                    font-weight: 200;
+                }
+            }
+
+            .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

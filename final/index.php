@@ -7,7 +7,7 @@
     <title>Home | Rondon workshop</title>
     <link rel="stylesheet" href="styles/main/style.css">
 </head>
-<body class="index-body ">
+<body class="index-body">
     
     <?php include "_inc/header.php" ?>
 
@@ -52,7 +52,7 @@
 
             <p class="content">Welcome to the home of endless creativity. We believe that remarkable designs start with a simple idea and evolve into inspiring outcomes. Rondon workshop’s team of design enthusiasts are wholly committed to your goals and vision. Through our wide range of services we ensure that expectations are not just met, but exceeded. <br>Collaboration and communication are key to long-term success.</p>
 
-            <button class="btn">Get in Touch</button>
+            <button class="btn"><a href="#contact">Get in Touch</a></button>
 
             <img src="img/low/jump.jpg" alt="sexy car">
 
@@ -74,7 +74,49 @@
 
     </section>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <section class="video">
+
+        <video controls>
+
+            <source src="img/vid/wix.mp4" type="video/mp4">
+
+        </video>
+
+    </section>
+
+    <section class="contact">
+
+        <div class="contact-container">
+
+            <div class="contact-us">
+
+                <h1>CONTACT US</h1>
+
+            </div>
+
+            <form action="" class="contact-form" id="contact">
+
+                <label for="name">Name *</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                <label for="email">Email *</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Type the subject">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="Type your message here..."></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <?php include "_inc/footer.php" ?>
+
 </body>
 </html>

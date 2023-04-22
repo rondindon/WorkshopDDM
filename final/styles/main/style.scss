@@ -3,6 +3,10 @@
 @import '../normalize/normalize';
 @import '../inc/shape-dividers';
 @import '../inc/header';
+@import '../inc/footer';
+@import '../../pages/styles/team';
+@import '../../pages/styles/news';
+@import '../../pages/styles/book';
 
 .index-body{
     width: 100%;
@@ -115,6 +119,10 @@
                 transition: .3s;
                 font-size: 0.87em;
 
+                a{
+                    color: whitesmoke;
+                }
+
                 &:hover{
                     opacity: .7;
                 }
@@ -123,10 +131,10 @@
     }
 
     .opening-hours{
-        height: 80vh;
+        height: 90vh;
         background-image: url("../../img/basic/gar.jpg");
         background-size: cover;
-        margin: 5rem 0;
+        object-fit: cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,5 +166,105 @@
                 gap: .2rem;
             }
         }
+    }
+
+    .video{
+        background-color: black;
+        @include flex-center;
+        padding: 6rem 0;
+
+        video{
+            width: 50%;
+        }
+    }
+
+    .contact{
+        background-image: url("../../img/basic/contact.jpg");
+        background-size: cover;
+        height: 70vh;
+        @include flex-center;
+
+        .contact-container{
+
+            width: 90%;
+            height: 80%;
+            padding: 2rem 5rem;
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+            background-color: $contact-gray;
+            color: whitesmoke;
+
+            .contact-us{
+                align-self: flex-start;
+                width: 70%;
+                text-align: center;
+
+                h1{
+                    font-size: 2.2em;
+                }
+            }
+
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                max-height: 85%;
+                gap: 1rem;
+
+                input{
+                    color: whitesmoke;
+                    background-color: $contact-gray;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-color: whitesmoke;
+
+                    &::placeholder{
+                        color: whitesmoke;
+                        padding: 1rem;
+                    }
+
+                    &:hover{
+                        border-top: 2px solid whitesmoke;
+                        border-right: 2px solid whitesmoke;
+                        border-left: 2px solid whitesmoke;
+                    }
+                }
+
+                textarea{
+                    color: whitesmoke;
+                    background-color: $contact-gray;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-color: whitesmoke;
+
+                    &::placeholder{
+                        color: whitesmoke;
+                    }
+
+                    &:hover{
+                        border-top: 2px solid whitesmoke;
+                        border-right: 2px solid whitesmoke;
+                        border-left: 2px solid whitesmoke;
+                    }
+                }
+
+                button{
+                    height: 3.5rem;
+                    width: 100%;
+                    font-size: 1.5em;
+                    font-weight: 200;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: #5b5b5e;
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+
     }
 }
